@@ -13,7 +13,7 @@ const getCryptoCurr = async function (req, res) {
   
     let data = result.data.data;
        
-     const sortVal = data.sort((a, b)=> {return a.changePercent24Hr - b.changePercent24Hr})
+     const sortVal = data.sort((a, b)=>{return a.changePercent24Hr - b.changePercent24Hr})
     await cryptoChain.deleteMany()
   const saveData = await cryptoChain.insertMany(sortVal)
 

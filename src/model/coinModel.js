@@ -12,6 +12,6 @@ const cryptoSchema = new mongoose.Schema({
     type: String,
   },
   priceUsd: {
-    type: String,
+    type:String,
   }}, {timestamps :true});
 module.exports =mongoose.model("CryptoCoin",cryptoSchema);
